@@ -10,13 +10,15 @@ import javax.swing.*;
 
 public class ClientGUI extends JFrame
 {
+	private JPanel north;
+	private JPanel core;
+	private JPanel central;
+	private JPanel scrolls;
+	private JPanel south;
+	
 	private JLabel statuslabel;
 	private JLabel status;
-	private JButton connect;
-	private JButton submit;
-	private JButton stop;
-	private JPanel north;
-	private JPanel south;
+	
 	private String[] labels = {"Client ID", "Server URL", "Server Port"};
 	private JLabel clientid;
 	private JLabel serverurl;
@@ -28,6 +30,10 @@ public class ClientGUI extends JFrame
 	private JTextArea serverArea;
 	private JScrollPane clientscroll;
 	private JScrollPane serverscroll;
+	
+	private JButton connect;
+	private JButton submit;
+	private JButton stop;
 
 	public ClientGUI(String title)
 	{
@@ -35,51 +41,49 @@ public class ClientGUI extends JFrame
 		this.setTitle(title);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new BorderLayout());
-		statuslabel = new JLabel();
-		statuslabel.setText("Status: ");
-		status = new JLabel();
-		status.setText("NOT CONNECTED");
+		statuslabel = new JLabel("Status: ");
+		status = new JLabel("NOT CONNECTED");
 		status.setForeground(Color.RED);
 		north = new JPanel();
-		north.setLayout(new FlowLayout());
-		north.add(statuslabel);
-		north.add(status); 
 		
 		textFields[0] = new JTextField();
 		textFields[0].setEditable(false);
 		textFields[1] = new JTextField();
 		textFields[2] = new JTextField();
 		
-		clientid = new JLabel();
-		clientid.setText(labels[0]);
-		serverurl = new JLabel();
-		serverurl.setText(labels[1]);
-		serverport = new JLabel();
-		serverport.setText(labels[2]);
+		clientid = new JLabel(labels[0]);
+		serverurl = new JLabel(labels[1]);
+		serverport = new JLabel(labels[2]);
+
+		scrolls = new JPanel();
+		scrolls.setLayout(new BoxLayout(scrolls, BoxLayout.Y_AXIS));
+		clientdata = new JLabel("Enter Client Data Below");
+		serverdata = new JLabel("Received Server Data");
+		clientArea = new JTextArea(10, 20);
+		serverArea = new JTextArea(10, 20);
+		clientscroll = new JScrollPane(clientArea);
+		serverscroll = new JScrollPane(serverArea);
 		
-		north.add(clientid);
-		north.add(textFields[0]);
-		north.add(serverurl);
-		north.add(textFields[1]);
-		north.add(serverport);
-		north.add(textFields[2]);
+		north.add(statuslabel);
+		north.add(status); 
 		
-		clientdata = new JLabel();
-		clientdata.setText("Enter Client Data Below");
-		serverdata = new JLabel();
-		serverdata.setText("Received Server Data");
-		clientArea = new JTextArea();
-		serverArea = new JTextArea();
-		clientscroll = new JScrollPane();
-		serverscroll = new JScrollPane();
-		clientscroll.add(clientArea);
-		serverscroll.add(serverArea);
+		core = new JPanel(new BorderLayout());
+		central = new JPanel(new GridLayout(6, 1, 10, 10));
 		
-		north.add(clientdata);
-		north.add(clientscroll);
-		north.add(serverdata);
-		north.add(serverscroll);
+		central.add(clientid);
+		central.add(textFields[0]);
+		central.add(serverurl);
+		central.add(textFields[1]);
+		central.add(serverport);
+		central.add(textFields[2]);
+		scrolls.add(clientdata);
+		scrolls.add(clientscroll);
+		scrolls.add(serverdata);
+		scrolls.add(serverscroll);
+		core.add(central, BorderLayout.NORTH);
+		core.add(scrolls, BorderLayout.SOUTH);
 		
+		south = new JPanel();
 		connect = new JButton();
 		connect.setText("Connect");
 		connect.addActionListener(new ActionListener() {
@@ -87,30 +91,27 @@ public class ClientGUI extends JFrame
 				System.out.println("Connect Button Pressed");
 			}
 		}
-				);
-		submit = new JButton();
-		submit.setText("Submit");
+		);
+		submit = new JButton("Submit");
 		submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Client Data: " + clientArea.getText());
 			}
 		}
-				);
-		stop = new JButton();
-		stop.setText("Stop");
+		);
+		stop = new JButton("Stop");
 		stop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Stop Button Pressed");
 			}
 		}
-				);
-		south = new JPanel();
-		south.setLayout(new FlowLayout());
+		);
 		south.add(connect);
 		south.add(submit);
 		south.add(stop);
-		this.add(north);
-		this.add(south, BorderLayout.SOUTH);
+		this.getContentPane().add(north, BorderLayout.NORTH);
+		this.getContentPane().add(core, BorderLayout.CENTER);
+		this.getContentPane().add(south, BorderLayout.SOUTH);
 		this.setMinimumSize(new Dimension(480, 720));
 		this.setVisible(true);
 		System.out.println("\nSTOPPING " + title + "\n");    

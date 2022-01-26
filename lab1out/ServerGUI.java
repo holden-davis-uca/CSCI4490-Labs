@@ -10,19 +10,28 @@ import javax.swing.*;
 
 public class ServerGUI extends JFrame
 {
-	private JButton listen;
-	private JButton close;
-	private JButton stop;
-	private JButton quit;
+	private JPanel north;
+	private JPanel core;
+	private JPanel central;
+	private JPanel scrolls;
+	private JPanel south;
+	
 	private JLabel statuslabel;
-	private JLabel status; //Initialized to “Not Connected”
+	private JLabel status;
+
 	private JLabel port;
 	private JLabel timeout;
 	private String[] labels = {"Port #", "Timeout"};
 	private JTextField[] textFields = new JTextField[labels.length];
+	private JLabel loglabel;
 	private JTextArea log;
-	private JPanel north;
-	private JPanel south;
+	private JScrollPane serverscroll;
+	
+	
+	private JButton listen;
+	private JButton close;
+	private JButton stop;
+	private JButton quit;
 
 	public ServerGUI(String title)
 	{
@@ -30,68 +39,74 @@ public class ServerGUI extends JFrame
 		this.setTitle(title);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new BorderLayout());
-		statuslabel = new JLabel();
-		statuslabel.setText("Status: ");
-		status = new JLabel();
-		status.setText("NOT CONNECTED");
+		statuslabel = new JLabel("Status: ");
+		status = new JLabel("NOT CONNECTED");
 		status.setForeground(Color.RED);
 		north = new JPanel();
-		north.setLayout(new FlowLayout());
+	
+		port = new JLabel(labels[0]);
+		textFields[0] = new JTextField();
+
+		timeout = new JLabel(labels[1]);
+		textFields[1] = new JTextField();
+		
+		scrolls = new JPanel();
+		scrolls.setLayout(new BoxLayout(scrolls, BoxLayout.Y_AXIS));
+		
 		north.add(statuslabel);
 		north.add(status); 
+		loglabel = new JLabel("Server Log Below");
+		log = new JTextArea(10, 20);
+		serverscroll = new JScrollPane(log);
 		
-		port = new JLabel();
-		port.setText(labels[0]);
-		textFields[0] = new JTextField();
-		north.add(port);
-		north.add(textFields[0]);
+		core = new JPanel(new BorderLayout());
+		central = new JPanel(new GridLayout(4, 1, 10, 10));
 		
-		timeout = new JLabel();
-		timeout.setText(labels[1]);
-		textFields[1] = new JTextField();
-		north.add(timeout);
-		north.add(textFields[1]);
+		central.add(port);
+		central.add(textFields[0]);
+		central.add(timeout);
+		central.add(textFields[1]);
+		scrolls.add(loglabel);
+		scrolls.add(serverscroll);
+		core.add(central, BorderLayout.NORTH);
+		core.add(scrolls, BorderLayout.SOUTH);
 		
 		south = new JPanel();
-		south.setLayout(new FlowLayout());
-		listen = new JButton();
-		listen.setText("Listen");
+		listen = new JButton("Listen");
 		listen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Listen Button Pressed");
 			}
 		}
-				);
-		close = new JButton();
-		close.setText("Close");
+		);
+		close = new JButton("Close");
 		close.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Close Button Pressed");
 			}
 		}
-				);
-		stop = new JButton();
-		stop.setText("Stop");
+		);
+		stop = new JButton("Stop");
 		stop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Stop Button Pressed");
 			}
 		}
-				);
-		quit = new JButton();
-		quit.setText("Quit");
+		);
+		quit = new JButton("Quit");
 		quit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
 			}
 		}
-				);
+		);
 		south.add(listen);
 		south.add(close);
 		south.add(stop);
 		south.add(quit);
-		this.add(north);
-		this.add(south, BorderLayout.SOUTH);
+		this.getContentPane().add(north, BorderLayout.NORTH);
+		this.getContentPane().add(core, BorderLayout.CENTER);
+		this.getContentPane().add(south, BorderLayout.SOUTH);
 		this.setMinimumSize(new Dimension(480,720));
 		this.setVisible(true);
 		System.out.println("\nSTOPPING " + title + "\n");    
