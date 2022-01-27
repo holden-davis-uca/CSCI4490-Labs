@@ -1,0 +1,1 @@
+java -cp .;ocsf.jar lab2in.TestChatServer 8300 500

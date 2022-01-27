@@ -1,0 +1,1 @@
+java -cp .;ocsf.jar lab2out.ServerGUI Server
