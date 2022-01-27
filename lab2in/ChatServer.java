@@ -1,7 +1,6 @@
 package lab2in;
 
-import ocsf.server.AbstractServer;
-import ocsf.server.ConnectionToClient;
+import ocsf.server.*;
 
 public class ChatServer extends AbstractServer{
 
@@ -18,9 +17,7 @@ public class ChatServer extends AbstractServer{
 	{
 		System.err.println("Listening Exception Occurred\n");
 		System.err.println(exception.getMessage());
-		System.err.println("\n");
-		System.err.println(exception.getStackTrace());
-		System.err.println("\n");
+		exception.printStackTrace();
 	}
 	public void serverStarted() 
 	{
