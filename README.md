@@ -3,3 +3,6 @@
 Currently:
 
 * Lab 1 In
+* Lab 1 Out
+* Lab 2 In
+* Lab 2 Out
