@@ -13,13 +13,13 @@ public class ChatClient extends AbstractClient{
 	}
 
 	public void handleMessageFromServer(Object msg) {
-		System.out.println("Server Message sent to Client " + msg);
+		System.out.println("Server Message sent to Client " + msg.toString());
 	}
 	public void connectionException(Throwable exception)
 	{
 		System.err.println("Connection Exception Occurred");
 		System.err.println(exception.getMessage());
-		System.err.println(exception.getStackTrace());
+		exception.printStackTrace();;
 	}
 	public void connectionEstablished()
 	{
