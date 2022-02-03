@@ -1,7 +1,8 @@
 //Holden Davis
 //CSCI 4490 - Dr. Smith
+//2/3/22
 
-package lab2in;
+package lab3in;
 
 import java.io.IOException;
 
