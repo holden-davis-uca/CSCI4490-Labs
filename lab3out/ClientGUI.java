@@ -93,7 +93,6 @@ public class ClientGUI extends JFrame
 		connect.setText("Connect");
 		connect.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Connect Button Pressed");
 				try {
 					client.openConnection();
 				} catch (IOException e1) {
@@ -106,9 +105,8 @@ public class ClientGUI extends JFrame
 		submit = new JButton("Submit");
 		submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Client Data: " + clientArea.getText());
 				try {
-					client.sendToServer(clientArea.toString());
+					client.sendToServer(clientArea.getText());
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -119,7 +117,6 @@ public class ClientGUI extends JFrame
 		stop = new JButton("Stop");
 		stop.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Stop Button Pressed");
 				try {
 					client.closeConnection();
 				} catch (IOException e1) {

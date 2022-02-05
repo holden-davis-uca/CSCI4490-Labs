@@ -17,8 +17,7 @@ public class ChatClient extends AbstractClient{
 	public ChatClient() {
 		super("localhost", 8300);
 	}
-	
-	public void setStatus(JLabel status) 
+	public void setStatus(JLabel status)
 	{
 		this.status = status;
 	}
@@ -30,10 +29,24 @@ public class ChatClient extends AbstractClient{
 	{
 		this.clientID = clientID;
 	}
-
 	public void handleMessageFromServer(Object arg0) 
 	{
-		serverMsg.append(arg0.toString());
+		try
+		{
+			serverMsg.append("Sever: " + arg0.toString() + "\n");
+			String[] response = arg0.toString().split("-");
+			String id = response[1];
+			clientID.setText(id);
+		} catch (Exception e)
+		{
+			serverMsg.append("Server: " + arg0.toString() + "\n");
+		}
+	}
+	public void connectionException(Throwable exception)
+	{
+		System.err.println("Connection Exception Occurred");
+		System.err.println(exception.getMessage());
+		exception.printStackTrace();;
 	}
 	public void connectionEstablished()
 	{

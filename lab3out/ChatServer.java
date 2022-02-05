@@ -6,6 +6,8 @@ package lab3out;
 
 import ocsf.server.*;
 import java.awt.*;
+import java.io.IOException;
+
 import javax.swing.*;
 
 public class ChatServer extends AbstractServer{
@@ -25,11 +27,17 @@ public class ChatServer extends AbstractServer{
 	}
 	public void handleMessageFromClient(Object arg0, ConnectionToClient arg1)
 	{
-		log.append("Client " + arg1.getId() + " " + arg0.toString());
+		log.append("Client " + arg1.getId() + ": " + arg0.toString());
+		try {
+			arg1.sendToClient(arg0.toString());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	public void listeningException(Throwable exception)
 	{
-		log.append(exception.getMessage());
+		log.append(exception.getMessage() + "\n");
 		log.append("\nPress Listen to Restart Server\n");
 		status.setText("Exception Occurred when Listening");
 		status.setForeground(Color.RED);
@@ -54,7 +62,13 @@ public class ChatServer extends AbstractServer{
 	}
 	public void clientConnected(ConnectionToClient client)
 	{
-		log.append("Client connected\n");
+		log.append("Client " + client.getId() + " Connected\n");
+		try {
+			client.sendToClient("username: client-" + client.getId());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 }
