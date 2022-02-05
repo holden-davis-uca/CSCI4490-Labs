@@ -1,6 +1,6 @@
 //Holden Davis
 //CSCI 4490 - Dr. Smith
-//2/1/22
+//2/5/22
 
 package lab3out;
 
@@ -91,7 +91,6 @@ public class ServerGUI extends JFrame
 						server.setTimeout(Integer.parseInt(textFields[1].getText()));
 						server.listen();
 					} catch (IOException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 				}
@@ -110,7 +109,6 @@ public class ServerGUI extends JFrame
 					try {
 						server.close();
 					} catch (IOException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 				}

@@ -1,6 +1,6 @@
 //Holden Davis
 //CSCI 4490 - Dr. Smith
-//2/1/22
+//2/5/22
 
 package lab3out;
 
@@ -31,7 +31,6 @@ public class ChatServer extends AbstractServer{
 		try {
 			arg1.sendToClient(arg0.toString());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -66,7 +65,6 @@ public class ChatServer extends AbstractServer{
 		try {
 			client.sendToClient("username: client-" + client.getId());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

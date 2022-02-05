@@ -1,6 +1,6 @@
 //Holden Davis
 //CSCI 4490 - Dr. Smith
-//2/3/22
+//2/5/22
 
 package lab3out;
 
@@ -33,10 +33,10 @@ public class ChatClient extends AbstractClient{
 	{
 		try
 		{
-			serverMsg.append("Sever: " + arg0.toString() + "\n");
 			String[] response = arg0.toString().split("-");
 			String id = response[1];
-			clientID.setText(id);
+			clientID.setText("client" + id);
+			serverMsg.append("Server: " + arg0.toString() + "\n");
 		} catch (Exception e)
 		{
 			serverMsg.append("Server: " + arg0.toString() + "\n");

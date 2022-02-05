@@ -7,4 +7,4 @@ Currently:
 * Lab 2 In
 * Lab 2 Out
 * Lab 3 In
-* Lab 3 Out - WIP
+* Lab 3 Out

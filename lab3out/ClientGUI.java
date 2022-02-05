@@ -1,6 +1,6 @@
 //Holden Davis
 //CSCI 4490 - Dr. Smith
-//1/26/22
+//2/5/22
 
 package lab3out;
 
@@ -96,7 +96,6 @@ public class ClientGUI extends JFrame
 				try {
 					client.openConnection();
 				} catch (IOException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
@@ -108,7 +107,6 @@ public class ClientGUI extends JFrame
 				try {
 					client.sendToServer(clientArea.getText());
 				} catch (IOException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
@@ -120,7 +118,6 @@ public class ClientGUI extends JFrame
 				try {
 					client.closeConnection();
 				} catch (IOException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
