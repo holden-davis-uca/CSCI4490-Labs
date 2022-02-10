@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_dQRfkIq0EeyaL5D8BiryCw" name="RootModel">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_dXbQcIq0EeyaL5D8BiryCw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_q2FN8Iq0EeyaL5D8BiryCw" name="Library" visibility="public">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VwdCkIq1EeyaL5D8BiryCw" name="Login">
+      <extend xmi:type="uml:Extend" xmi:id="_h56c0Iq3Eeyssego_FoR7g" extendedCase="_jU--kIq1EeyaL5D8BiryCw" extensionLocation="_h57q8Iq3Eeyssego_FoR7g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jU--kIq1EeyaL5D8BiryCw" name="IncorrectLogin">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_lK3iIIq1EeyaL5D8BiryCw" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_h57q8Iq3Eeyssego_FoR7g" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-ugUcIq1Eeyssego_FoR7g" name="Search for Items by Author"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OmI7gIq2Eeyssego_FoR7g" name="Check User Information"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XB_tgIq2Eeyssego_FoR7g" name="Check Out"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hq8CIIq2Eeyssego_FoR7g" name="Check In"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kiFOYIq2Eeyssego_FoR7g" name="Record that a fine has been paid"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mg0zAIq2Eeyssego_FoR7g" name="Add New Borrower"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_plF1QIq2Eeyssego_FoR7g" name="Add a new item to the collection"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_TZQhsIq1EeyaL5D8BiryCw" name="Basic User"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_YaWnkIq2Eeyssego_FoR7g" name="Checkout Clerk">
+    <generalization xmi:type="uml:Generalization" xmi:id="_3MwIUIq3Eeyssego_FoR7g" general="_TZQhsIq1EeyaL5D8BiryCw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_b0JN4Iq2Eeyssego_FoR7g" name="Librarian">
+    <generalization xmi:type="uml:Generalization" xmi:id="_30Q0QIq3Eeyssego_FoR7g" general="_YaWnkIq2Eeyssego_FoR7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_biVPsIq3Eeyssego_FoR7g" memberEnd="_biXE4oq3Eeyssego_FoR7g _biXE44q3Eeyssego_FoR7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_biXE4Iq3Eeyssego_FoR7g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_biXE4Yq3Eeyssego_FoR7g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_biXE4oq3Eeyssego_FoR7g" name="basic user" type="_TZQhsIq1EeyaL5D8BiryCw" association="_biVPsIq3Eeyssego_FoR7g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_biXE44q3Eeyssego_FoR7g" name="login" type="_VwdCkIq1EeyaL5D8BiryCw" association="_biVPsIq3Eeyssego_FoR7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jYWwwIq3Eeyssego_FoR7g" memberEnd="_jYXX0oq3Eeyssego_FoR7g _jYXX04q3Eeyssego_FoR7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jYXX0Iq3Eeyssego_FoR7g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jYXX0Yq3Eeyssego_FoR7g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jYXX0oq3Eeyssego_FoR7g" name="search for items by author" type="_-ugUcIq1Eeyssego_FoR7g" association="_jYWwwIq3Eeyssego_FoR7g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jYXX04q3Eeyssego_FoR7g" type="_TZQhsIq1EeyaL5D8BiryCw" association="_jYWwwIq3Eeyssego_FoR7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lgapcIq3Eeyssego_FoR7g" memberEnd="_lgbQgoq3Eeyssego_FoR7g _lgbQg4q3Eeyssego_FoR7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lgbQgIq3Eeyssego_FoR7g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lgbQgYq3Eeyssego_FoR7g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lgbQgoq3Eeyssego_FoR7g" name="basic user" type="_TZQhsIq1EeyaL5D8BiryCw" association="_lgapcIq3Eeyssego_FoR7g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_lgbQg4q3Eeyssego_FoR7g" name="check user information" type="_OmI7gIq2Eeyssego_FoR7g" association="_lgapcIq3Eeyssego_FoR7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Bokm8Iq4Eeyssego_FoR7g" memberEnd="_Bol1Eoq4Eeyssego_FoR7g _Bol1E4q4Eeyssego_FoR7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bol1EIq4Eeyssego_FoR7g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bol1EYq4Eeyssego_FoR7g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Bol1Eoq4Eeyssego_FoR7g" name="record that a fine has been paid" type="_kiFOYIq2Eeyssego_FoR7g" association="_Bokm8Iq4Eeyssego_FoR7g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Bol1E4q4Eeyssego_FoR7g" name="checkout clerk" type="_YaWnkIq2Eeyssego_FoR7g" association="_Bokm8Iq4Eeyssego_FoR7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ClJj8Iq4Eeyssego_FoR7g" memberEnd="_ClKLAoq4Eeyssego_FoR7g _ClKLA4q4Eeyssego_FoR7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ClKLAIq4Eeyssego_FoR7g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ClKLAYq4Eeyssego_FoR7g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ClKLAoq4Eeyssego_FoR7g" name="check in" type="_hq8CIIq2Eeyssego_FoR7g" association="_ClJj8Iq4Eeyssego_FoR7g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ClKLA4q4Eeyssego_FoR7g" type="_YaWnkIq2Eeyssego_FoR7g" association="_ClJj8Iq4Eeyssego_FoR7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EQymYIq4Eeyssego_FoR7g" memberEnd="_EQz0gYq4Eeyssego_FoR7g _EQz0goq4Eeyssego_FoR7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EQzNcIq4Eeyssego_FoR7g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EQz0gIq4Eeyssego_FoR7g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EQz0gYq4Eeyssego_FoR7g" name="check out" type="_XB_tgIq2Eeyssego_FoR7g" association="_EQymYIq4Eeyssego_FoR7g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EQz0goq4Eeyssego_FoR7g" type="_YaWnkIq2Eeyssego_FoR7g" association="_EQymYIq4Eeyssego_FoR7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FWRnwIq4Eeyssego_FoR7g" memberEnd="_FWSO0oq4Eeyssego_FoR7g _FWSO04q4Eeyssego_FoR7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FWSO0Iq4Eeyssego_FoR7g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FWSO0Yq4Eeyssego_FoR7g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FWSO0oq4Eeyssego_FoR7g" name="add a new item to the collection" type="_plF1QIq2Eeyssego_FoR7g" association="_FWRnwIq4Eeyssego_FoR7g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FWSO04q4Eeyssego_FoR7g" name="librarian" type="_b0JN4Iq2Eeyssego_FoR7g" association="_FWRnwIq4Eeyssego_FoR7g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GAjT0Iq4Eeyssego_FoR7g" memberEnd="_GAj64oq4Eeyssego_FoR7g _GAj644q4Eeyssego_FoR7g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GAj64Iq4Eeyssego_FoR7g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GAj64Yq4Eeyssego_FoR7g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GAj64oq4Eeyssego_FoR7g" name="add new borrower" type="_mg0zAIq2Eeyssego_FoR7g" association="_GAjT0Iq4Eeyssego_FoR7g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GAj644q4Eeyssego_FoR7g" type="_b0JN4Iq2Eeyssego_FoR7g" association="_GAjT0Iq4Eeyssego_FoR7g"/>
+  </packagedElement>
+</uml:Model>
