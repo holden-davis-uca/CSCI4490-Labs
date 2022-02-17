@@ -9,3 +9,4 @@ Currently:
 * Lab 3 In
 * Lab 3 Out
 * Lab 4 In
+* Lab 4 Out
