@@ -11,4 +11,4 @@ Currently:
 * Lab 4 In
 * Lab 4 Out
 * Lab 5 In
-* Lab 5 In B - WIP
+* Lab 5 In B
