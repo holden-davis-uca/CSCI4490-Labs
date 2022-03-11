@@ -1,5 +1,5 @@
 # Labs for CSCI 4490 - Software Engineering
- 
+
 Currently:
 
 * Lab 1 In
@@ -12,3 +12,4 @@ Currently:
 * Lab 4 Out
 * Lab 5 In
 * Lab 5 In B
+* Lab 6 In
