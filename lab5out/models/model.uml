@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_uG6wgBcpEeiw04JpNeJnEA" name="model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_uasoIBcpEeiw04JpNeJnEA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3by1MBcpEeiw04JpNeJnEA" name="Labs">
+      <packagedElement xmi:type="uml:Package" xmi:id="_3d340BcpEeiw04JpNeJnEA" name="lab5out">
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hl7MhcpEeiw04JpNeJnEA" name="JTextArea"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3hl7NRcpEeiw04JpNeJnEA" name="JLabel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3iyOBBcpEeiw04JpNeJnEA" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3i7_AhcpEeiw04JpNeJnEA" name="JPanel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3jFI9BcpEeiw04JpNeJnEA" name="CardLayout"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_3jrl4BcpEeiw04JpNeJnEA" name="ActionListener"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3j-g0RcpEeiw04JpNeJnEA" name="ActionEvent"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3kkWshcpEeiw04JpNeJnEA" name="JTextField"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3kuHsBcpEeiw04JpNeJnEA" name="JPasswordField"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3lKzoBcpEeiw04JpNeJnEA" name="FileInputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3lKzoxcpEeiw04JpNeJnEA" name="FileOutputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3niyNxcpEeiw04JpNeJnEA" name="JButton"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3d340hcpEeiw04JpNeJnEA" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_3d340xcpEeiw04JpNeJnEA" name="ocsf">
+        <packagedElement xmi:type="uml:Package" xmi:id="_3d341BcpEeiw04JpNeJnEA" name="client">
+          <packagedElement xmi:type="uml:Class" xmi:id="_3d341RcpEeiw04JpNeJnEA" name="AbstractClient"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_3hcxQRcpEeiw04JpNeJnEA" name="server">
+          <packagedElement xmi:type="uml:Class" xmi:id="_3hcxQhcpEeiw04JpNeJnEA" name="AbstractServer"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_3iViGBcpEeiw04JpNeJnEA" name="ConnectionToClient"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_3hJPQxcpEeiw04JpNeJnEA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_3hTAQBcpEeiw04JpNeJnEA" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_3hTAQRcpEeiw04JpNeJnEA" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_3hTAQhcpEeiw04JpNeJnEA" name="Object"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_3iodAhcpEeiw04JpNeJnEA" name="Throwable"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_3jYD4BcpEeiw04JpNeJnEA" name="String"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_3kHqxRcpEeiw04JpNeJnEA" name="io">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_3kHqxhcpEeiw04JpNeJnEA" name="Serializable"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_3lT9khcpEeiw04JpNeJnEA" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="_3lT9kxcpEeiw04JpNeJnEA" name="HashMap"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3iyOAxcpEeiw04JpNeJnEA" name="ChatGUI" visibility="public">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3i7_ARcpEeiw04JpNeJnEA" general="_3iyOBBcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3jO58xcpEeiw04JpNeJnEA" name="getUser">
+        <language>JAVA</language>
+        <body>&#xD;
+    return user;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3jO59hcpEeiw04JpNeJnEA" name="setUser">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.user = user;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3jO5-RcpEeiw04JpNeJnEA" name="ClientGUI">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Set up the chat client.&#xD;
+    client = new ChatClient();&#xD;
+    client.setHost(&quot;localhost&quot;);&#xD;
+    client.setPort(8300);&#xD;
+    try {&#xD;
+        client.openConnection();&#xD;
+    } catch (IOException e) {&#xD;
+        e.printStackTrace();&#xD;
+    }&#xD;
+    // Set the title and default close operation.&#xD;
+    this.setTitle(&quot;Chat Client&quot;);&#xD;
+    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+    // Create the card layout container.&#xD;
+    container = new JPanel(cardLayout);&#xD;
+    // Create the four views.&#xD;
+    view1 = new InitialPanel(container);&#xD;
+    view2 = new LoginPanel(container, client);&#xD;
+    view3 = new CreateAccountPanel(container, client);&#xD;
+    view4 = new ContactsPanel(container);&#xD;
+    // Add the views to the card layout container.&#xD;
+    container.add(view1, &quot;1&quot;);&#xD;
+    container.add(view2, &quot;2&quot;);&#xD;
+    container.add(view3, &quot;3&quot;);&#xD;
+    container.add(view4, &quot;4&quot;);&#xD;
+    // Show the initial view in the card layout.&#xD;
+    cardLayout.show(container, &quot;1&quot;);&#xD;
+    // Add the card layout container to the JFrame.&#xD;
+    // GridBagLayout makes the container stay centered in the window.&#xD;
+    this.setLayout(new GridBagLayout());&#xD;
+    this.add(container);&#xD;
+    // Show the JFrame.&#xD;
+    this.setSize(550, 350);&#xD;
+    this.setVisible(true);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3jYD5hcpEeiw04JpNeJnEA" name="main">
+        <language>JAVA</language>
+        <body>&#xD;
+    new ClientGUI();&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_VrvC8KPVEeyDx4TGEMS43g" name="getUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_WHejwKPVEeyDx4TGEMS43g" name="setUser"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_WawsIKPVEeyDx4TGEMS43g" name="ClientGUI"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Wehx0KPVEeyDx4TGEMS43g" name="main"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3mNVdBcpEeiw04JpNeJnEA" name="InitialPanel" visibility="public">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3mNVdRcpEeiw04JpNeJnEA" general="_3i7_AhcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fEGFAKPLEeyDx4TGEMS43g" name="LoginButton" type="_3niyNxcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nPLQEKPLEeyDx4TGEMS43g" name="CreateButton" type="_3niyNxcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3mWfYhcpEeiw04JpNeJnEA" name="InitialPanel">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Create the controller.&#xD;
+    InitialControl controller = new InitialControl(container);&#xD;
+    // Create the information label.&#xD;
+    JLabel label = new JLabel(&quot;Account Information&quot;, JLabel.CENTER);&#xD;
+    // Create the login button.&#xD;
+    JButton loginButton = new JButton(&quot;Login&quot;);&#xD;
+    loginButton.addActionListener(controller);&#xD;
+    JPanel loginButtonBuffer = new JPanel();&#xD;
+    loginButtonBuffer.add(loginButton);&#xD;
+    // Create the create account button.&#xD;
+    JButton createButton = new JButton(&quot;Create&quot;);&#xD;
+    createButton.addActionListener(controller);&#xD;
+    JPanel createButtonBuffer = new JPanel();&#xD;
+    createButtonBuffer.add(createButton);&#xD;
+    // Arrange the components in a grid.&#xD;
+    JPanel grid = new JPanel(new GridLayout(3, 1, 5, 5));&#xD;
+    grid.add(label);&#xD;
+    grid.add(loginButtonBuffer);&#xD;
+    grid.add(createButtonBuffer);&#xD;
+    this.add(grid);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__l2pkKPXEeyDx4TGEMS43g" name="InitialPanel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3d340RcpEeiw04JpNeJnEA" name="ChatClient" visibility="public">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3gtKYRcpEeiw04JpNeJnEA" general="_3d341RcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3hAFUBcpEeiw04JpNeJnEA" name="setLoginControl">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.loginControl = loginControl;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3hAFUxcpEeiw04JpNeJnEA" name="setCreateAccountControl">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.createAccountControl = createAccountControl;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3hJPQhcpEeiw04JpNeJnEA" name="ChatClient">
+        <language>JAVA</language>
+        <body>&#xD;
+    super(&quot;localhost&quot;, 8300);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3hTARhcpEeiw04JpNeJnEA" name="handleMessageFromServer">
+        <language>JAVA</language>
+        <body>&#xD;
+    // If we received a String, figure out what this event is.&#xD;
+    if (arg0 instanceof String) {&#xD;
+        // Get the text of the message.&#xD;
+        String message = (String) arg0;&#xD;
+        // If we successfully logged in, tell the login controller.&#xD;
+        if (message.equals(&quot;LoginSuccessful&quot;)) {&#xD;
+            loginControl.loginSuccess();&#xD;
+        } else // If we successfully created an account, tell the create account controller.&#xD;
+        if (message.equals(&quot;CreateAccountSuccessful&quot;)) {&#xD;
+            createAccountControl.createAccountSuccess();&#xD;
+        }&#xD;
+    } else // If we received an Error, figure out where to display it.&#xD;
+    if (arg0 instanceof Error) {&#xD;
+        // Get the Error object.&#xD;
+        Error error = (Error) arg0;&#xD;
+        // Display login errors using the login controller.&#xD;
+        if (error.getType().equals(&quot;Login&quot;)) {&#xD;
+            loginControl.displayError(error.getMessage());&#xD;
+        } else // Display account creation errors using the create account controller.&#xD;
+        if (error.getType().equals(&quot;CreateAccount&quot;)) {&#xD;
+            createAccountControl.displayError(error.getMessage());&#xD;
+        }&#xD;
+    }&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lZbq4KPVEeyDx4TGEMS43g" name="setLoginControl"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_l0jgoKPVEeyDx4TGEMS43g" name="setCreateAccountControl"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_l43Y4KPVEeyDx4TGEMS43g" name="ChatClient"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_l9HmwKPVEeyDx4TGEMS43g" name="handleMessageFromServer"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3gtKYhcpEeiw04JpNeJnEA" name="LoginControl" visibility="public">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3mWfYxcpEeiw04JpNeJnEA" name="LoginControl implements ActionListener" client="_3gtKYhcpEeiw04JpNeJnEA" supplier="_3jrl4BcpEeiw04JpNeJnEA" contract="_3jrl4BcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3mgQZRcpEeiw04JpNeJnEA" name="LoginControl">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.container = container;&#xD;
+    this.client = client;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3mqBYhcpEeiw04JpNeJnEA" name="actionPerformed">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Get the name of the button clicked.&#xD;
+    String command = ae.getActionCommand();&#xD;
+    // The Cancel button takes the user back to the initial panel.&#xD;
+    if (command == &quot;Cancel&quot;) {&#xD;
+        CardLayout cardLayout = (CardLayout) container.getLayout();&#xD;
+        cardLayout.show(container, &quot;1&quot;);&#xD;
+    } else // The Submit button submits the login information to the server.&#xD;
+    if (command == &quot;Submit&quot;) {&#xD;
+        // Get the username and password the user entered.&#xD;
+        LoginPanel loginPanel = (LoginPanel) container.getComponent(1);&#xD;
+        LoginData data = new LoginData(loginPanel.getUsername(), loginPanel.getPassword());&#xD;
+        // Check the validity of the information locally first.&#xD;
+        if (data.getUsername().equals(&quot;&quot;) || data.getPassword().equals(&quot;&quot;)) {&#xD;
+            displayError(&quot;You must enter a username and password.&quot;);&#xD;
+            return;&#xD;
+        }&#xD;
+        // Submit the login information to the server.&#xD;
+        try {&#xD;
+            client.sendToServer(data);&#xD;
+        } catch (IOException e) {&#xD;
+            displayError(&quot;Error connecting to the server.&quot;);&#xD;
+        }&#xD;
+    }&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3mqBZBcpEeiw04JpNeJnEA" name="loginSuccess">
+        <language>JAVA</language>
+        <body>&#xD;
+    LoginPanel loginPanel = (LoginPanel) container.getComponent(1);&#xD;
+    ClientGUI clientGUI = (ClientGUI) SwingUtilities.getWindowAncestor(loginPanel);&#xD;
+    clientGUI.setUser(new User(loginPanel.getUsername(), loginPanel.getPassword()));&#xD;
+    CardLayout cardLayout = (CardLayout) container.getLayout();&#xD;
+    cardLayout.show(container, &quot;4&quot;);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3mqBZxcpEeiw04JpNeJnEA" name="displayError">
+        <language>JAVA</language>
+        <body>&#xD;
+    LoginPanel loginPanel = (LoginPanel) container.getComponent(1);&#xD;
+    loginPanel.setError(error);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_w3Y78KPVEeyDx4TGEMS43g" name="LoginControl"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yNhBYKPVEeyDx4TGEMS43g" name="actionPerformed"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zSBLUKPVEeyDx4TGEMS43g" name="loginSuccess"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_0LtzcKPVEeyDx4TGEMS43g" name="displayError"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3nGGQxcpEeiw04JpNeJnEA" name="LoginPanel" visibility="public">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3nGGRBcpEeiw04JpNeJnEA" general="_3i7_AhcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_pwJYAKPLEeyDx4TGEMS43g" name="LoginButton" type="_3niyNxcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rPttUKPLEeyDx4TGEMS43g" name="UsernameField" type="_3kkWshcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2R5BUKPLEeyDx4TGEMS43g" name="PasswordField" visibility="public" type="_3kkWshcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3nP3QRcpEeiw04JpNeJnEA" name="getUsername">
+        <language>JAVA</language>
+        <body>&#xD;
+    return usernameField.getText();&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3nP3RBcpEeiw04JpNeJnEA" name="getPassword">
+        <language>JAVA</language>
+        <body>&#xD;
+    return new String(passwordField.getPassword());&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3nP3RxcpEeiw04JpNeJnEA" name="setError">
+        <language>JAVA</language>
+        <body>&#xD;
+    errorLabel.setText(error);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3nZoQhcpEeiw04JpNeJnEA" name="LoginPanel">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Create the controller and set it in the chat client.&#xD;
+    LoginControl controller = new LoginControl(container, client);&#xD;
+    client.setLoginControl(controller);&#xD;
+    // Create a panel for the labels at the top of the GUI.&#xD;
+    JPanel labelPanel = new JPanel(new GridLayout(2, 1, 5, 5));&#xD;
+    errorLabel = new JLabel(&quot;&quot;, JLabel.CENTER);&#xD;
+    errorLabel.setForeground(Color.RED);&#xD;
+    JLabel instructionLabel = new JLabel(&quot;Enter your username and password to log in.&quot;, JLabel.CENTER);&#xD;
+    labelPanel.add(errorLabel);&#xD;
+    labelPanel.add(instructionLabel);&#xD;
+    // Create a panel for the login information form.&#xD;
+    JPanel loginPanel = new JPanel(new GridLayout(2, 2, 5, 5));&#xD;
+    JLabel usernameLabel = new JLabel(&quot;Username:&quot;, JLabel.RIGHT);&#xD;
+    usernameField = new JTextField(10);&#xD;
+    JLabel passwordLabel = new JLabel(&quot;Password:&quot;, JLabel.RIGHT);&#xD;
+    passwordField = new JPasswordField(10);&#xD;
+    loginPanel.add(usernameLabel);&#xD;
+    loginPanel.add(usernameField);&#xD;
+    loginPanel.add(passwordLabel);&#xD;
+    loginPanel.add(passwordField);&#xD;
+    // Create a panel for the buttons.&#xD;
+    JPanel buttonPanel = new JPanel();&#xD;
+    JButton submitButton = new JButton(&quot;Submit&quot;);&#xD;
+    submitButton.addActionListener(controller);&#xD;
+    JButton cancelButton = new JButton(&quot;Cancel&quot;);&#xD;
+    cancelButton.addActionListener(controller);&#xD;
+    buttonPanel.add(submitButton);&#xD;
+    buttonPanel.add(cancelButton);&#xD;
+    // Arrange the three panels in a grid.&#xD;
+    JPanel grid = new JPanel(new GridLayout(3, 1, 0, 10));&#xD;
+    grid.add(labelPanel);&#xD;
+    grid.add(loginPanel);&#xD;
+    grid.add(buttonPanel);&#xD;
+    this.add(grid);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_B53lgKPWEeyDx4TGEMS43g" name="getUsername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_B55asKPWEeyDx4TGEMS43g" name="getPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_B56BwKPWEeyDx4TGEMS43g" name="LoginPanel"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_B56o0KPWEeyDx4TGEMS43g" name="setError"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3mqBaBcpEeiw04JpNeJnEA" name="LoginData" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zHD_4KPSEeyDx4TGEMS43g" name="Password">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zHFOAKPSEeyDx4TGEMS43g" name="Username">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3mqBaRcpEeiw04JpNeJnEA" name="LoginData implements Serializable" client="_3mqBaBcpEeiw04JpNeJnEA" supplier="_3kHqxhcpEeiw04JpNeJnEA" contract="_3kHqxhcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3mzLVBcpEeiw04JpNeJnEA" name="getUsername">
+        <language>JAVA</language>
+        <body>&#xD;
+    return username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3mzLVxcpEeiw04JpNeJnEA" name="getPassword">
+        <language>JAVA</language>
+        <body>&#xD;
+    return password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3mzLWhcpEeiw04JpNeJnEA" name="setUsername">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.username = username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3m88UhcpEeiw04JpNeJnEA" name="setPassword">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.password = password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3nGGQhcpEeiw04JpNeJnEA" name="LoginData">
+        <language>JAVA</language>
+        <body>&#xD;
+    setUsername(username);&#xD;
+    setPassword(password);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_a_tBgKPWEeyDx4TGEMS43g" name="getUsername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_c1mMIKPWEeyDx4TGEMS43g" name="getPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_dvS0QKPWEeyDx4TGEMS43g" name="setUsername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ely-cKPWEeyDx4TGEMS43g" name="setPassword"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3gtKZBcpEeiw04JpNeJnEA" name="CreateAccountControl" visibility="public">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3j0v0BcpEeiw04JpNeJnEA" name="CreateAccountControl implements ActionListener" client="_3gtKZBcpEeiw04JpNeJnEA" supplier="_3jrl4BcpEeiw04JpNeJnEA" contract="_3jrl4BcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3j-g0BcpEeiw04JpNeJnEA" name="CreateAccountControl">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.container = container;&#xD;
+    this.client = client;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3j-g1RcpEeiw04JpNeJnEA" name="actionPerformed">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Get the name of the button clicked.&#xD;
+    String command = ae.getActionCommand();&#xD;
+    // The Cancel button takes the user back to the initial panel.&#xD;
+    if (command == &quot;Cancel&quot;) {&#xD;
+        CardLayout cardLayout = (CardLayout) container.getLayout();&#xD;
+        cardLayout.show(container, &quot;1&quot;);&#xD;
+    } else // The Submit button creates a new account.&#xD;
+    if (command == &quot;Submit&quot;) {&#xD;
+        // Get the text the user entered in the three fields.&#xD;
+        CreateAccountPanel createAccountPanel = (CreateAccountPanel) container.getComponent(2);&#xD;
+        String username = createAccountPanel.getUsername();&#xD;
+        String password = createAccountPanel.getPassword();&#xD;
+        String passwordVerify = createAccountPanel.getPasswordVerify();&#xD;
+        // Check the validity of the information locally first.&#xD;
+        if (username.equals(&quot;&quot;) || password.equals(&quot;&quot;)) {&#xD;
+            displayError(&quot;You must enter a username and password.&quot;);&#xD;
+            return;&#xD;
+        } else if (!password.equals(passwordVerify)) {&#xD;
+            displayError(&quot;The two passwords did not match.&quot;);&#xD;
+            return;&#xD;
+        }&#xD;
+        if (password.length() &lt; 6) {&#xD;
+            displayError(&quot;The password must be at least 6 characters.&quot;);&#xD;
+            return;&#xD;
+        }&#xD;
+        // Submit the new account information to the server.&#xD;
+        CreateAccountData data = new CreateAccountData(username, password);&#xD;
+        try {&#xD;
+            client.sendToServer(data);&#xD;
+        } catch (IOException e) {&#xD;
+            displayError(&quot;Error connecting to the server.&quot;);&#xD;
+        }&#xD;
+    }&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3kHqwBcpEeiw04JpNeJnEA" name="createAccountSuccess">
+        <language>JAVA</language>
+        <body>&#xD;
+    CreateAccountPanel createAccountPanel = (CreateAccountPanel) container.getComponent(2);&#xD;
+    ClientGUI clientGUI = (ClientGUI) SwingUtilities.getWindowAncestor(createAccountPanel);&#xD;
+    clientGUI.setUser(new User(createAccountPanel.getUsername(), createAccountPanel.getPassword()));&#xD;
+    CardLayout cardLayout = (CardLayout) container.getLayout();&#xD;
+    cardLayout.show(container, &quot;4&quot;);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3kHqwxcpEeiw04JpNeJnEA" name="displayError">
+        <language>JAVA</language>
+        <body>&#xD;
+    CreateAccountPanel createAccountPanel = (CreateAccountPanel) container.getComponent(2);&#xD;
+    createAccountPanel.setError(error);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lPU3MKPWEeyDx4TGEMS43g" name="CreateAccountControl"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lhLcMKPWEeyDx4TGEMS43g" name="actionPerformed"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_l4RtkKPWEeyDx4TGEMS43g" name="createAccountSuccess"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_l-o0QKPWEeyDx4TGEMS43g" name="displayError"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3kkWsBcpEeiw04JpNeJnEA" name="CreateAccountPanel" visibility="public">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3kkWsRcpEeiw04JpNeJnEA" general="_3i7_AhcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VbGVAKPMEeyDx4TGEMS43g" name="VerifyPasswordField" visibility="public" type="_3kkWshcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VbHjIKPMEeyDx4TGEMS43g" name="CreateButton" type="_3niyNxcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VbIxQKPMEeyDx4TGEMS43g" name="PasswordField" visibility="public" type="_3kkWshcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VbJYUKPMEeyDx4TGEMS43g" name="UsernameField" type="_3kkWshcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3k3RoRcpEeiw04JpNeJnEA" name="getUsername">
+        <language>JAVA</language>
+        <body>&#xD;
+    return usernameField.getText();&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3k3RpBcpEeiw04JpNeJnEA" name="getPassword">
+        <language>JAVA</language>
+        <body>&#xD;
+    return new String(passwordField.getPassword());&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3k3RpxcpEeiw04JpNeJnEA" name="getPasswordVerify">
+        <language>JAVA</language>
+        <body>&#xD;
+    return new String(passwordVerifyField.getPassword());&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3lBCohcpEeiw04JpNeJnEA" name="setError">
+        <language>JAVA</language>
+        <body>&#xD;
+    errorLabel.setText(error);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3lBCpxcpEeiw04JpNeJnEA" name="CreateAccountPanel">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Create the controller and set it in the chat client.&#xD;
+    CreateAccountControl controller = new CreateAccountControl(container, client);&#xD;
+    client.setCreateAccountControl(controller);&#xD;
+    // Create a panel for the labels at the top of the GUI.&#xD;
+    JPanel labelPanel = new JPanel(new GridLayout(3, 1, 5, 5));&#xD;
+    errorLabel = new JLabel(&quot;&quot;, JLabel.CENTER);&#xD;
+    errorLabel.setForeground(Color.RED);&#xD;
+    JLabel instructionLabel = new JLabel(&quot;Enter a username and password to create an account.&quot;, JLabel.CENTER);&#xD;
+    JLabel instructionLabel2 = new JLabel(&quot;Your password must be at least 6 characters.&quot;, JLabel.CENTER);&#xD;
+    labelPanel.add(errorLabel);&#xD;
+    labelPanel.add(instructionLabel);&#xD;
+    labelPanel.add(instructionLabel2);&#xD;
+    // Create a panel for the account information form.&#xD;
+    JPanel accountPanel = new JPanel(new GridLayout(3, 2, 5, 5));&#xD;
+    JLabel usernameLabel = new JLabel(&quot;Username:&quot;, JLabel.RIGHT);&#xD;
+    usernameField = new JTextField(10);&#xD;
+    JLabel passwordLabel = new JLabel(&quot;Password:&quot;, JLabel.RIGHT);&#xD;
+    passwordField = new JPasswordField(10);&#xD;
+    JLabel passwordVerifyLabel = new JLabel(&quot;Verify Password:&quot;, JLabel.RIGHT);&#xD;
+    passwordVerifyField = new JPasswordField(10);&#xD;
+    accountPanel.add(usernameLabel);&#xD;
+    accountPanel.add(usernameField);&#xD;
+    accountPanel.add(passwordLabel);&#xD;
+    accountPanel.add(passwordField);&#xD;
+    accountPanel.add(passwordVerifyLabel);&#xD;
+    accountPanel.add(passwordVerifyField);&#xD;
+    // Create a panel for the buttons.&#xD;
+    JPanel buttonPanel = new JPanel();&#xD;
+    JButton submitButton = new JButton(&quot;Submit&quot;);&#xD;
+    submitButton.addActionListener(controller);&#xD;
+    JButton cancelButton = new JButton(&quot;Cancel&quot;);&#xD;
+    cancelButton.addActionListener(controller);&#xD;
+    buttonPanel.add(submitButton);&#xD;
+    buttonPanel.add(cancelButton);&#xD;
+    // Arrange the three panels in a grid.&#xD;
+    JPanel grid = new JPanel(new GridLayout(3, 1, 0, 10));&#xD;
+    grid.add(labelPanel);&#xD;
+    grid.add(accountPanel);&#xD;
+    grid.add(buttonPanel);&#xD;
+    this.add(grid);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yFlX8KPWEeyDx4TGEMS43g" name="getUsername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zlqDkKPWEeyDx4TGEMS43g" name="getPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1JEXEKPWEeyDx4TGEMS43g" name="getPasswordVerify"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3UbbYKPWEeyDx4TGEMS43g" name="setError"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4qRM8KPWEeyDx4TGEMS43g" name="CreateAccountPanel"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3kHqxBcpEeiw04JpNeJnEA" name="CreateAccountData" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mpSp4KPNEeyDx4TGEMS43g" name="Username">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_pEyb8KPNEeyDx4TGEMS43g" name="Password">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3kHqyBcpEeiw04JpNeJnEA" name="CreateAccountData implements Serializable" client="_3kHqxBcpEeiw04JpNeJnEA" supplier="_3kHqxhcpEeiw04JpNeJnEA" contract="_3kHqxhcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3kRbwhcpEeiw04JpNeJnEA" name="getUsername">
+        <language>JAVA</language>
+        <body>&#xD;
+    return username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3kRbxRcpEeiw04JpNeJnEA" name="getPassword">
+        <language>JAVA</language>
+        <body>&#xD;
+    return password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3kRbyBcpEeiw04JpNeJnEA" name="setUsername">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.username = username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3kbMxhcpEeiw04JpNeJnEA" name="CreateAccountData">
+        <language>JAVA</language>
+        <body>&#xD;
+    setUsername(username);&#xD;
+    setPassword(password);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OUFOAKPXEeyDx4TGEMS43g" name="getUsername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_PDqQ0KPXEeyDx4TGEMS43g" name="getPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_P5P1AKPXEeyDx4TGEMS43g" name="setUsername"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Qk0hkKPXEeyDx4TGEMS43g" name="setPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_eKRDkKPXEeyDx4TGEMS43g" name="CreateAccountData"/>
+      <nestedClassifier xmi:type="uml:OpaqueBehavior" xmi:id="_3kbMwRcpEeiw04JpNeJnEA" name="setPassword">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.password = password;&#xD;
+</body>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1ssh8BzCEeiw04JpNeJnEA" name="InitialControl"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DCW7gBzDEeiw04JpNeJnEA" memberEnd="_DCp2chzDEeiw04JpNeJnEA _DC9YcRzDEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DCp2cBzDEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DCp2cRzDEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DC9YcRzDEeiw04JpNeJnEA" type="_1ssh8BzCEeiw04JpNeJnEA" association="_DCW7gBzDEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DCp2chzDEeiw04JpNeJnEA" type="_3mNVdBcpEeiw04JpNeJnEA" association="_DCW7gBzDEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DCzncBzDEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DC9YcBzDEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8kfqwBzDEeiw04JpNeJnEA" memberEnd="_8kfqwxzDEeiw04JpNeJnEA _8kpbwBzDEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8kfqwRzDEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8kfqwhzDEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8kpbwBzDEeiw04JpNeJnEA" type="_3gtKYhcpEeiw04JpNeJnEA" association="_8kfqwBzDEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8kfqwxzDEeiw04JpNeJnEA" type="_3nGGQxcpEeiw04JpNeJnEA" association="_8kfqwBzDEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8kfqxBzDEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8kfqxRzDEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SiKz0B1EEeiw04JpNeJnEA" memberEnd="_SiKz0x1EEeiw04JpNeJnEA _SiKz1h1EEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SiKz0R1EEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SiKz0h1EEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_SiKz1h1EEeiw04JpNeJnEA" type="_3gtKYhcpEeiw04JpNeJnEA" association="_SiKz0B1EEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_SiKz0x1EEeiw04JpNeJnEA" type="_3mqBaBcpEeiw04JpNeJnEA" association="_SiKz0B1EEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SiKz1B1EEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SiKz1R1EEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3nZoQxcpEeiw04JpNeJnEA" name="ServerGUI" visibility="public">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3nZoRBcpEeiw04JpNeJnEA" general="_3iyOBBcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3nZoRRcpEeiw04JpNeJnEA" name="status" visibility="private" type="_3hl7NRcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3nZoRhcpEeiw04JpNeJnEA" name="labels" visibility="private" type="_3jYD4BcpEeiw04JpNeJnEA" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3nZoRxcpEeiw04JpNeJnEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3niyMBcpEeiw04JpNeJnEA" value="*"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_3niyMRcpEeiw04JpNeJnEA" name="defaultValue">
+          <language>JAVA</language>
+          <body>{ &quot;Port #&quot;, &quot;Timeout&quot; }</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3niyMhcpEeiw04JpNeJnEA" name="textFields" visibility="private" type="_3kkWshcpEeiw04JpNeJnEA" isUnique="false">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3niyMxcpEeiw04JpNeJnEA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3niyNBcpEeiw04JpNeJnEA" value="*"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_3niyNRcpEeiw04JpNeJnEA" name="defaultValue">
+          <language>JAVA</language>
+          <body>new JTextField[labels.length]</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3niyNhcpEeiw04JpNeJnEA" name="log" visibility="private" type="_3hl7MhcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3niyORcpEeiw04JpNeJnEA" name="listen" visibility="private" type="_3niyNxcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3niyOhcpEeiw04JpNeJnEA" name="close" visibility="private" type="_3niyNxcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3niyOxcpEeiw04JpNeJnEA" name="stop" visibility="private" type="_3niyNxcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3niyPBcpEeiw04JpNeJnEA" name="quit" visibility="private" type="_3niyNxcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3niyPRcpEeiw04JpNeJnEA" name="server" visibility="private" type="_3hcxQBcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3nsjMRcpEeiw04JpNeJnEA" name="ServerGUI" specification="_3niyPhcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Create the main variables that will be used.&#xD;
+    JPanel north = new JPanel();&#xD;
+    JPanel center = new JPanel(new BorderLayout());&#xD;
+    JPanel south = new JPanel();&#xD;
+    EventHandler handler = new EventHandler();&#xD;
+    int i = 0;&#xD;
+    // Set the title and default close operation.&#xD;
+    this.setTitle(&quot;Chat Server&quot;);&#xD;
+    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+    // Create the status label.&#xD;
+    JLabel statusText = new JLabel(&quot;Status:&quot;);&#xD;
+    north.add(statusText);&#xD;
+    status = new JLabel(&quot;Not Connected&quot;);&#xD;
+    status.setForeground(Color.RED);&#xD;
+    north.add(status);&#xD;
+    // Create the grid of text fields.&#xD;
+    JPanel centerNorth = new JPanel(new GridLayout(labels.length, 2, 5, 5));&#xD;
+    for (i = 0; i &lt; textFields.length; i++) {&#xD;
+        JLabel label = new JLabel(labels[i], JLabel.RIGHT);&#xD;
+        centerNorth.add(label);&#xD;
+        textFields[i] = new JTextField(10);&#xD;
+        centerNorth.add(textFields[i]);&#xD;
+    }&#xD;
+    // Set some default values for the server.&#xD;
+    textFields[0].setText(&quot;8300&quot;);&#xD;
+    textFields[1].setText(&quot;500&quot;);&#xD;
+    // Buffer the grid of text fields and add it to the north part of the center.&#xD;
+    JPanel centerNorthBuffer = new JPanel();&#xD;
+    centerNorthBuffer.add(centerNorth);&#xD;
+    center.add(centerNorthBuffer, BorderLayout.NORTH);&#xD;
+    // Create the server log panel.&#xD;
+    JPanel serverLogPanel = new JPanel(new BorderLayout());&#xD;
+    JLabel serverLabel = new JLabel(&quot;Server Log&quot;, JLabel.CENTER);&#xD;
+    JPanel serverLabelBuffer = new JPanel();&#xD;
+    serverLabelBuffer.add(serverLabel);&#xD;
+    serverLogPanel.add(serverLabelBuffer, BorderLayout.NORTH);&#xD;
+    log = new JTextArea(10, 35);&#xD;
+    log.setEditable(false);&#xD;
+    JScrollPane serverLogPane = new JScrollPane(log);&#xD;
+    JPanel serverLogPaneBuffer = new JPanel();&#xD;
+    serverLogPaneBuffer.add(serverLogPane);&#xD;
+    serverLogPanel.add(serverLogPaneBuffer, BorderLayout.SOUTH);&#xD;
+    // Add the server log panel to the south part of the center.&#xD;
+    JPanel centerSouth = new JPanel();&#xD;
+    centerSouth.add(serverLogPanel);&#xD;
+    center.add(centerSouth, BorderLayout.SOUTH);&#xD;
+    // Create the buttons.&#xD;
+    listen = new JButton(&quot;Listen&quot;);&#xD;
+    listen.addActionListener(handler);&#xD;
+    south.add(listen);&#xD;
+    close = new JButton(&quot;Close&quot;);&#xD;
+    close.addActionListener(handler);&#xD;
+    south.add(close);&#xD;
+    stop = new JButton(&quot;Stop&quot;);&#xD;
+    stop.addActionListener(handler);&#xD;
+    south.add(stop);&#xD;
+    quit = new JButton(&quot;Quit&quot;);&#xD;
+    quit.addActionListener(handler);&#xD;
+    south.add(quit);&#xD;
+    // Add the north, center, and south JPanels to the JFrame.&#xD;
+    this.add(north, BorderLayout.NORTH);&#xD;
+    this.add(center, BorderLayout.CENTER);&#xD;
+    this.add(south, BorderLayout.SOUTH);&#xD;
+    // Display the window.&#xD;
+    this.setSize(450, 450);&#xD;
+    this.setVisible(true);&#xD;
+    // Set up the chat server object.&#xD;
+    server = new ChatServer();&#xD;
+    server.setLog(log);&#xD;
+    server.setStatus(status);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3nsjNhcpEeiw04JpNeJnEA" name="main" specification="_3nsjMhcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    new ServerGUI();&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3nsjOhcpEeiw04JpNeJnEA" name="getTextFieldAt" specification="_3nsjNxcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return textFields[index];&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3n1tIhcpEeiw04JpNeJnEA" name="getStatus" specification="_3n1tIBcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return status;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3n1tJRcpEeiw04JpNeJnEA" name="getLog" specification="_3n1tIxcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return log;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3niyPhcpEeiw04JpNeJnEA" name="ServerGUI" visibility="public" method="_3nsjMRcpEeiw04JpNeJnEA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3nsjMhcpEeiw04JpNeJnEA" name="main" visibility="public" isStatic="true" method="_3nsjNhcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3nsjMxcpEeiw04JpNeJnEA" name="args" type="_3jYD4BcpEeiw04JpNeJnEA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3nsjNBcpEeiw04JpNeJnEA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3nsjNRcpEeiw04JpNeJnEA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3n1tIBcpEeiw04JpNeJnEA" name="getStatus" visibility="public" method="_3n1tIhcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3n1tIRcpEeiw04JpNeJnEA" type="_3hl7NRcpEeiw04JpNeJnEA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3nsjNxcpEeiw04JpNeJnEA" name="getTextFieldAt" visibility="public" method="_3nsjOhcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3nsjOBcpEeiw04JpNeJnEA" type="_3kkWshcpEeiw04JpNeJnEA" direction="return"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3nsjORcpEeiw04JpNeJnEA" name="index">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3n1tIxcpEeiw04JpNeJnEA" name="getLog" visibility="public" method="_3n1tJRcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3n1tJBcpEeiw04JpNeJnEA" type="_3hl7MhcpEeiw04JpNeJnEA" direction="return"/>
+      </ownedOperation>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_3n1tJhcpEeiw04JpNeJnEA" name="EventHandler">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3n1tJxcpEeiw04JpNeJnEA" name="EventHandler implements ActionListener" client="_3n1tJhcpEeiw04JpNeJnEA" supplier="_3jrl4BcpEeiw04JpNeJnEA" contract="_3jrl4BcpEeiw04JpNeJnEA"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3n1tKhcpEeiw04JpNeJnEA" name="actionPerformed" specification="_3n1tKBcpEeiw04JpNeJnEA">
+          <language>JAVA</language>
+          <body>&#xD;
+    // Determine which button was clicked.&#xD;
+    Object buttonClicked = e.getSource();&#xD;
+    // Handle the Listen button.&#xD;
+    if (buttonClicked == listen) {&#xD;
+        // Display an error if the port number or timeout was not entered.&#xD;
+        if (textFields[0].getText().equals(&quot;&quot;) || textFields[1].getText().equals(&quot;&quot;)) {&#xD;
+            log.append(&quot;Port number or timeout not entered before pressing Listen\n&quot;);&#xD;
+        } else // Otherwise, tell the server to start listening with the user's settings.&#xD;
+        {&#xD;
+            server.setPort(Integer.parseInt(textFields[0].getText()));&#xD;
+            server.setTimeout(Integer.parseInt(textFields[1].getText()));&#xD;
+            try {&#xD;
+                server.listen();&#xD;
+            } catch (IOException e1) {&#xD;
+                log.append(&quot;An exception occurred: &quot; + e1.getMessage() + &quot;\n&quot;);&#xD;
+            }&#xD;
+        }&#xD;
+    } else // Handle the Close button.&#xD;
+    if (buttonClicked == close) {&#xD;
+        // Display an error if the server has not been started.&#xD;
+        if (!server.isRunning()) {&#xD;
+            log.append(&quot;Server not currently started\n&quot;);&#xD;
+        } else // Otherwise, close the server.&#xD;
+        {&#xD;
+            try {&#xD;
+                server.close();&#xD;
+            } catch (IOException e1) {&#xD;
+                log.append(&quot;An exception occurred: &quot; + e1.getMessage() + &quot;\n&quot;);&#xD;
+            }&#xD;
+        }&#xD;
+    } else // Handle the Stop button.&#xD;
+    if (buttonClicked == stop) {&#xD;
+        // Display an error if the server is not listening.&#xD;
+        if (!server.isListening()) {&#xD;
+            log.append(&quot;Server not currently listening\n&quot;);&#xD;
+        } else // Otherwise, stop listening.&#xD;
+        {&#xD;
+            server.stopListening();&#xD;
+        }&#xD;
+    } else // For the Quit button, just stop this program.&#xD;
+    if (buttonClicked == quit) {&#xD;
+        System.exit(0);&#xD;
+    }&#xD;
+</body>
+        </ownedBehavior>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_3n1tKBcpEeiw04JpNeJnEA" name="actionPerformed" visibility="public" method="_3n1tKhcpEeiw04JpNeJnEA">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_3n1tKRcpEeiw04JpNeJnEA" name="e" type="_3j-g0RcpEeiw04JpNeJnEA"/>
+        </ownedOperation>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3jFI8hcpEeiw04JpNeJnEA" name="User" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3n_eIRcpEeiw04JpNeJnEA" name="username" visibility="private" type="_3jYD4BcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3n_eIhcpEeiw04JpNeJnEA" name="password" visibility="private" type="_3jYD4BcpEeiw04JpNeJnEA" isUnique="false"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3n_eIBcpEeiw04JpNeJnEA" name="User implements Serializable" client="_3jFI8hcpEeiw04JpNeJnEA" supplier="_3kHqxhcpEeiw04JpNeJnEA" contract="_3kHqxhcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3n_eJRcpEeiw04JpNeJnEA" name="getUsername" specification="_3n_eIxcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3n_eKBcpEeiw04JpNeJnEA" name="getPassword" specification="_3n_eJhcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3n_eKxcpEeiw04JpNeJnEA" name="setUsername" specification="_3n_eKRcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.username = username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3n_eLhcpEeiw04JpNeJnEA" name="setPassword" specification="_3n_eLBcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.password = password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3oJPIhcpEeiw04JpNeJnEA" name="User" specification="_3n_eLxcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    setUsername(username);&#xD;
+    setPassword(password);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3n_eIxcpEeiw04JpNeJnEA" name="getUsername" visibility="public" method="_3n_eJRcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3n_eJBcpEeiw04JpNeJnEA" type="_3jYD4BcpEeiw04JpNeJnEA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3n_eJhcpEeiw04JpNeJnEA" name="getPassword" visibility="public" method="_3n_eKBcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3n_eJxcpEeiw04JpNeJnEA" type="_3jYD4BcpEeiw04JpNeJnEA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3n_eKRcpEeiw04JpNeJnEA" name="setUsername" visibility="public" method="_3n_eKxcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3n_eKhcpEeiw04JpNeJnEA" name="username" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3n_eLBcpEeiw04JpNeJnEA" name="setPassword" visibility="public" method="_3n_eLhcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3n_eLRcpEeiw04JpNeJnEA" name="password" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3n_eLxcpEeiw04JpNeJnEA" name="User" visibility="public" method="_3oJPIhcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3oJPIBcpEeiw04JpNeJnEA" name="username" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3oJPIRcpEeiw04JpNeJnEA" name="password" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3hcxQBcpEeiw04JpNeJnEA" name="ChatServer" visibility="public">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3hl7MRcpEeiw04JpNeJnEA" general="_3hcxQhcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3hl7NBcpEeiw04JpNeJnEA" name="log" visibility="private" type="_3hl7MhcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3hvsMRcpEeiw04JpNeJnEA" name="status" visibility="private" type="_3hl7NRcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3h42IBcpEeiw04JpNeJnEA" name="running" visibility="private" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_3h42IRcpEeiw04JpNeJnEA" name="defaultValue">
+          <language>JAVA</language>
+          <body>false</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3h42IxcpEeiw04JpNeJnEA" name="database" visibility="private" type="_3h42IhcpEeiw04JpNeJnEA" isUnique="false">
+        <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_3iCnIBcpEeiw04JpNeJnEA" name="defaultValue">
+          <language>JAVA</language>
+          <body>new DatabaseFile()</body>
+        </defaultValue>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iCnIxcpEeiw04JpNeJnEA" name="ChatServer" specification="_3iCnIRcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    super(12345);&#xD;
+    this.setTimeout(500);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iMYIRcpEeiw04JpNeJnEA" name="isRunning" specification="_3iCnJBcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return running;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iMYJBcpEeiw04JpNeJnEA" name="setLog" specification="_3iMYIhcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.log = log;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iViERcpEeiw04JpNeJnEA" name="setStatus" specification="_3iMYJRcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.status = status;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iViExcpEeiw04JpNeJnEA" name="serverStarted" specification="_3iViEhcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    running = true;&#xD;
+    status.setText(&quot;Listening&quot;);&#xD;
+    status.setForeground(Color.GREEN);&#xD;
+    log.append(&quot;Server started\n&quot;);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iViFRcpEeiw04JpNeJnEA" name="serverStopped" specification="_3iViFBcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    status.setText(&quot;Stopped&quot;);&#xD;
+    status.setForeground(Color.RED);&#xD;
+    log.append(&quot;Server stopped accepting new clients - press Listen to start accepting new clients\n&quot;);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iViFxcpEeiw04JpNeJnEA" name="serverClosed" specification="_3iViFhcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    running = false;&#xD;
+    status.setText(&quot;Close&quot;);&#xD;
+    status.setForeground(Color.RED);&#xD;
+    log.append(&quot;Server and all current clients are closed - press Listen to restart\n&quot;);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3ifTExcpEeiw04JpNeJnEA" name="clientConnected" specification="_3ifTERcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    log.append(&quot;Client &quot; + client.getId() + &quot; connected\n&quot;);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iodARcpEeiw04JpNeJnEA" name="handleMessageFromClient" specification="_3ifTFBcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    // If we received LoginData, verify the account information.&#xD;
+    if (arg0 instanceof LoginData) {&#xD;
+        // Check the username and password with the database.&#xD;
+        LoginData data = (LoginData) arg0;&#xD;
+        Object result;&#xD;
+        if (database.verifyAccount(data.getUsername(), data.getPassword())) {&#xD;
+            result = &quot;LoginSuccessful&quot;;&#xD;
+            log.append(&quot;Client &quot; + arg1.getId() + &quot; successfully logged in as &quot; + data.getUsername() + &quot;\n&quot;);&#xD;
+        } else {&#xD;
+            result = new Error(&quot;The username and password are incorrect.&quot;, &quot;Login&quot;);&#xD;
+            log.append(&quot;Client &quot; + arg1.getId() + &quot; failed to log in\n&quot;);&#xD;
+        }&#xD;
+        // Send the result to the client.&#xD;
+        try {&#xD;
+            arg1.sendToClient(result);&#xD;
+        } catch (IOException e) {&#xD;
+            return;&#xD;
+        }&#xD;
+    } else // If we received CreateAccountData, create a new account.&#xD;
+    if (arg0 instanceof CreateAccountData) {&#xD;
+        // Try to create the account.&#xD;
+        CreateAccountData data = (CreateAccountData) arg0;&#xD;
+        Object result;&#xD;
+        if (database.createNewAccount(data.getUsername(), data.getPassword())) {&#xD;
+            result = &quot;CreateAccountSuccessful&quot;;&#xD;
+            log.append(&quot;Client &quot; + arg1.getId() + &quot; created a new account called &quot; + data.getUsername() + &quot;\n&quot;);&#xD;
+        } else {&#xD;
+            result = new Error(&quot;The username is already in use.&quot;, &quot;CreateAccount&quot;);&#xD;
+            log.append(&quot;Client &quot; + arg1.getId() + &quot; failed to create a new account\n&quot;);&#xD;
+        }&#xD;
+        // Send the result to the client.&#xD;
+        try {&#xD;
+            arg1.sendToClient(result);&#xD;
+        } catch (IOException e) {&#xD;
+            return;&#xD;
+        }&#xD;
+    }&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3iyOAhcpEeiw04JpNeJnEA" name="listeningException" specification="_3iyOABcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    running = false;&#xD;
+    status.setText(&quot;Exception occurred while listening&quot;);&#xD;
+    status.setForeground(Color.RED);&#xD;
+    log.append(&quot;Listening exception: &quot; + exception.getMessage() + &quot;\n&quot;);&#xD;
+    log.append(&quot;Press Listen to restart server\n&quot;);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3iCnIRcpEeiw04JpNeJnEA" name="ChatServer" visibility="public" method="_3iCnIxcpEeiw04JpNeJnEA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3iCnJBcpEeiw04JpNeJnEA" name="isRunning" visibility="public" method="_3iMYIRcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3iMYIBcpEeiw04JpNeJnEA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3iMYIhcpEeiw04JpNeJnEA" name="setLog" visibility="public" method="_3iMYJBcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3iMYIxcpEeiw04JpNeJnEA" name="log" type="_3hl7MhcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3iMYJRcpEeiw04JpNeJnEA" name="setStatus" visibility="public" method="_3iViERcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3iViEBcpEeiw04JpNeJnEA" name="status" type="_3hl7NRcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3iViEhcpEeiw04JpNeJnEA" name="serverStarted" visibility="public" method="_3iViExcpEeiw04JpNeJnEA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3iViFBcpEeiw04JpNeJnEA" name="serverStopped" visibility="public" method="_3iViFRcpEeiw04JpNeJnEA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3iViFhcpEeiw04JpNeJnEA" name="serverClosed" visibility="public" method="_3iViFxcpEeiw04JpNeJnEA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3ifTERcpEeiw04JpNeJnEA" name="clientConnected" visibility="public" method="_3ifTExcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3ifTEhcpEeiw04JpNeJnEA" name="client" type="_3iViGBcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3ifTFBcpEeiw04JpNeJnEA" name="handleMessageFromClient" visibility="public" method="_3iodARcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3ifTFRcpEeiw04JpNeJnEA" name="arg0" type="_3hTAQhcpEeiw04JpNeJnEA"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3iodABcpEeiw04JpNeJnEA" name="arg1" type="_3iViGBcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3iyOABcpEeiw04JpNeJnEA" name="listeningException" visibility="public" method="_3iyOAhcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3iyOARcpEeiw04JpNeJnEA" name="exception" type="_3iodAhcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NiYF8BiXEeiw04JpNeJnEA" name="LoginData" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NiYF8RiXEeiw04JpNeJnEA" name="username" visibility="private" type="_3jYD4BcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NiYF8hiXEeiw04JpNeJnEA" name="password" visibility="private" type="_3jYD4BcpEeiw04JpNeJnEA" isUnique="false"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_NiYF8xiXEeiw04JpNeJnEA" name="LoginData implements Serializable" client="_NiYF8BiXEeiw04JpNeJnEA" supplier="_3kHqxhcpEeiw04JpNeJnEA" contract="_3kHqxhcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NiYF9BiXEeiw04JpNeJnEA" name="getUsername" specification="_NiYF-RiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NiYF9RiXEeiw04JpNeJnEA" name="getPassword" specification="_NiYF-xiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NiYF9hiXEeiw04JpNeJnEA" name="setUsername" specification="_NiYF_RiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.username = username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NiYF9xiXEeiw04JpNeJnEA" name="setPassword" specification="_NiYF_xiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.password = password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NiYF-BiXEeiw04JpNeJnEA" name="LoginData" specification="_NiYGARiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    setUsername(username);&#xD;
+    setPassword(password);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NiYF-RiXEeiw04JpNeJnEA" name="getUsername" visibility="public" method="_NiYF9BiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NiYF-hiXEeiw04JpNeJnEA" type="_3jYD4BcpEeiw04JpNeJnEA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NiYF-xiXEeiw04JpNeJnEA" name="getPassword" visibility="public" method="_NiYF9RiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NiYF_BiXEeiw04JpNeJnEA" type="_3jYD4BcpEeiw04JpNeJnEA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NiYF_RiXEeiw04JpNeJnEA" name="setUsername" visibility="public" method="_NiYF9hiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NiYF_hiXEeiw04JpNeJnEA" name="username" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NiYF_xiXEeiw04JpNeJnEA" name="setPassword" visibility="public" method="_NiYF9xiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NiYGABiXEeiw04JpNeJnEA" name="password" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NiYGARiXEeiw04JpNeJnEA" name="LoginData" visibility="public" method="_NiYF-BiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NiYGAhiXEeiw04JpNeJnEA" name="username" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_NiYGAxiXEeiw04JpNeJnEA" name="password" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3h42IhcpEeiw04JpNeJnEA" name="DatabaseFile" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3lKzohcpEeiw04JpNeJnEA" name="fis" visibility="private" type="_3lKzoBcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3lT9kRcpEeiw04JpNeJnEA" name="fos" visibility="private" type="_3lKzoxcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3lT9lRcpEeiw04JpNeJnEA" name="database" visibility="private" type="_3lT9kxcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3lT9mhcpEeiw04JpNeJnEA" name="verifyAccount" specification="_3lT9lhcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Read the database file.&#xD;
+    readFile();&#xD;
+    // Stop if this account doesn't exist.&#xD;
+    if (database.get(username) == null)&#xD;
+        return false;&#xD;
+    // Check the username and password.&#xD;
+    if (database.get(username).equals(password))&#xD;
+        return true;&#xD;
+    else&#xD;
+        return false;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3ldulBcpEeiw04JpNeJnEA" name="createNewAccount" specification="_3ldukBcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Read the database file.&#xD;
+    readFile();&#xD;
+    // Stop if this account already exists.&#xD;
+    if (database.get(username) != null)&#xD;
+        return false;&#xD;
+    // Add the new account.&#xD;
+    database.put(username, password);&#xD;
+    // Write the database to the file.&#xD;
+    writeFile();&#xD;
+    return true;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3ldulxcpEeiw04JpNeJnEA" name="readFile" specification="_3ldulRcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Create a new HashMap for the database.&#xD;
+    database = new HashMap&lt;String, String>();&#xD;
+    // Catch any exceptions that occur when reading the file.&#xD;
+    try {&#xD;
+        // Create a FileInputStream and a BufferedReader.&#xD;
+        fis = new FileInputStream(&quot;database.txt&quot;);&#xD;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(fis));&#xD;
+        // Read every line from the file one at a time.&#xD;
+        String line = reader.readLine();&#xD;
+        while (line != null) {&#xD;
+            // Split this line into the username and password components.&#xD;
+            String[] data = line.split(&quot;\\|&quot;);&#xD;
+            // Save the username and password in the HashMap.&#xD;
+            if (data.length == 2)&#xD;
+                database.put(data[0], data[1]);&#xD;
+            // Read the next line from the file.&#xD;
+            line = reader.readLine();&#xD;
+        }&#xD;
+        // Make sure the file is closed.&#xD;
+        fis.close();&#xD;
+    }// If an exception occurs, we can't do anything else.&#xD;
+     catch (Exception exception) {&#xD;
+        return;&#xD;
+    }&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3lm4gRcpEeiw04JpNeJnEA" name="writeFile" specification="_3ldumBcpEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    // Loop through every account in the database.&#xD;
+    String output = &quot;&quot;;&#xD;
+    for (Entry&lt;String, String> entry : database.entrySet()) {&#xD;
+        // Append the username and password for this account to our output.&#xD;
+        output += entry.getKey() + &quot;|&quot; + entry.getValue() + &quot;\n&quot;;&#xD;
+    }&#xD;
+    // Catch any exceptions that occur when writing the file.&#xD;
+    try {&#xD;
+        // Create a FileOutputStream and BufferedWriter.&#xD;
+        fos = new FileOutputStream(&quot;database.txt&quot;);&#xD;
+        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(fos));&#xD;
+        // Write the file contents.&#xD;
+        writer.write(output);&#xD;
+        writer.flush();&#xD;
+        // Make sure the file is closed.&#xD;
+        fos.close();&#xD;
+    }// If an exception occurs, we can't do anything else.&#xD;
+     catch (Exception exception) {&#xD;
+        return;&#xD;
+    }&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3lT9lhcpEeiw04JpNeJnEA" name="verifyAccount" visibility="public" method="_3lT9mhcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3lT9lxcpEeiw04JpNeJnEA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3lT9mBcpEeiw04JpNeJnEA" name="username" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3lT9mRcpEeiw04JpNeJnEA" name="password" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3ldukBcpEeiw04JpNeJnEA" name="createNewAccount" visibility="public" method="_3ldulBcpEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3ldukRcpEeiw04JpNeJnEA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3ldukhcpEeiw04JpNeJnEA" name="username" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3ldukxcpEeiw04JpNeJnEA" name="password" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3ldulRcpEeiw04JpNeJnEA" name="readFile" visibility="public" method="_3ldulxcpEeiw04JpNeJnEA"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3ldumBcpEeiw04JpNeJnEA" name="writeFile" visibility="public" method="_3lm4gRcpEeiw04JpNeJnEA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X6DrcBiXEeiw04JpNeJnEA" name="CreateAccountData" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_X6DrcRiXEeiw04JpNeJnEA" name="username" visibility="private" type="_3jYD4BcpEeiw04JpNeJnEA" isUnique="false"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_X6DrchiXEeiw04JpNeJnEA" name="password" visibility="private" type="_3jYD4BcpEeiw04JpNeJnEA" isUnique="false"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_X6DrcxiXEeiw04JpNeJnEA" name="CreateAccountData implements Serializable" client="_X6DrcBiXEeiw04JpNeJnEA" supplier="_3kHqxhcpEeiw04JpNeJnEA" contract="_3kHqxhcpEeiw04JpNeJnEA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X6DrdBiXEeiw04JpNeJnEA" name="getUsername" specification="_X6DreRiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X6DrdRiXEeiw04JpNeJnEA" name="getPassword" specification="_X6DrexiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    return password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X6DrdhiXEeiw04JpNeJnEA" name="setUsername" specification="_X6DrfRiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.username = username;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X6DrdxiXEeiw04JpNeJnEA" name="setPassword" specification="_X6DrfxiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    this.password = password;&#xD;
+</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X6DreBiXEeiw04JpNeJnEA" name="CreateAccountData" specification="_X6DrgRiXEeiw04JpNeJnEA">
+        <language>JAVA</language>
+        <body>&#xD;
+    setUsername(username);&#xD;
+    setPassword(password);&#xD;
+</body>
+      </ownedBehavior>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_X6DreRiXEeiw04JpNeJnEA" name="getUsername" visibility="public" method="_X6DrdBiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_X6DrehiXEeiw04JpNeJnEA" type="_3jYD4BcpEeiw04JpNeJnEA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_X6DrexiXEeiw04JpNeJnEA" name="getPassword" visibility="public" method="_X6DrdRiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_X6DrfBiXEeiw04JpNeJnEA" type="_3jYD4BcpEeiw04JpNeJnEA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_X6DrfRiXEeiw04JpNeJnEA" name="setUsername" visibility="public" method="_X6DrdhiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_X6DrfhiXEeiw04JpNeJnEA" name="username" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_X6DrfxiXEeiw04JpNeJnEA" name="setPassword" visibility="public" method="_X6DrdxiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_X6DrgBiXEeiw04JpNeJnEA" name="password" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_X6DrgRiXEeiw04JpNeJnEA" name="CreateAccountData" visibility="public" method="_X6DreBiXEeiw04JpNeJnEA">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_X6DrghiXEeiw04JpNeJnEA" name="username" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_X6DrgxiXEeiw04JpNeJnEA" name="password" type="_3jYD4BcpEeiw04JpNeJnEA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_r0_7QB1KEeiw04JpNeJnEA" memberEnd="_r1JFMB1KEeiw04JpNeJnEA _r1JFMx1KEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r0_7QR1KEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r0_7Qh1KEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r1JFMx1KEeiw04JpNeJnEA" type="_3hcxQBcpEeiw04JpNeJnEA" association="_r0_7QB1KEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_r1JFMB1KEeiw04JpNeJnEA" type="_3nZoQxcpEeiw04JpNeJnEA" association="_r0_7QB1KEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r1JFMR1KEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r1JFMh1KEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5teG8B1KEeiw04JpNeJnEA" memberEnd="_5teG8x1KEeiw04JpNeJnEA _5teG9h1KEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5teG8R1KEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5teG8h1KEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5teG9h1KEeiw04JpNeJnEA" type="_3hcxQBcpEeiw04JpNeJnEA" association="_5teG8B1KEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5teG8x1KEeiw04JpNeJnEA" type="_3h42IhcpEeiw04JpNeJnEA" association="_5teG8B1KEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5teG9B1KEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5teG9R1KEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_4YZU8B1LEeiw04JpNeJnEA" memberEnd="_4YZU8x1LEeiw04JpNeJnEA _4YZU9h1LEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4YZU8R1LEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4YZU8h1LEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4YZU9h1LEeiw04JpNeJnEA" type="_3iyOAxcpEeiw04JpNeJnEA" association="_4YZU8B1LEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_4YZU8x1LEeiw04JpNeJnEA" type="_1ssh8BzCEeiw04JpNeJnEA" association="_4YZU8B1LEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4YZU9B1LEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4YZU9R1LEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FItlwB1MEeiw04JpNeJnEA" memberEnd="_FItlwx1MEeiw04JpNeJnEA _FItlxh1MEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FItlwR1MEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FItlwh1MEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FItlxh1MEeiw04JpNeJnEA" type="_3iyOAxcpEeiw04JpNeJnEA" association="_FItlwB1MEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FItlwx1MEeiw04JpNeJnEA" type="_3mNVdBcpEeiw04JpNeJnEA" association="_FItlwB1MEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FItlxB1MEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FItlxR1MEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OwCsYB1MEeiw04JpNeJnEA" memberEnd="_OwL2Uh1MEeiw04JpNeJnEA _OwL2VR1MEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OwL2UB1MEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OwL2UR1MEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OwL2VR1MEeiw04JpNeJnEA" type="_3iyOAxcpEeiw04JpNeJnEA" association="_OwCsYB1MEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OwL2Uh1MEeiw04JpNeJnEA" type="_3nGGQxcpEeiw04JpNeJnEA" association="_OwCsYB1MEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OwL2Ux1MEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OwL2VB1MEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kBBWsB1MEeiw04JpNeJnEA" memberEnd="_kBBWsx1MEeiw04JpNeJnEA _kBBWth1MEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kBBWsR1MEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kBBWsh1MEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kBBWth1MEeiw04JpNeJnEA" type="_3iyOAxcpEeiw04JpNeJnEA" association="_kBBWsB1MEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kBBWsx1MEeiw04JpNeJnEA" type="_3gtKYhcpEeiw04JpNeJnEA" association="_kBBWsB1MEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kBBWtB1MEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kBBWtR1MEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_rCkKAB1QEeiw04JpNeJnEA" memberEnd="_rCkKAx1QEeiw04JpNeJnEA _rCkKBh1QEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rCkKAR1QEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rCkKAh1QEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_rCkKBh1QEeiw04JpNeJnEA" type="_3iyOAxcpEeiw04JpNeJnEA" association="_rCkKAB1QEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_rCkKAx1QEeiw04JpNeJnEA" type="_3gtKZBcpEeiw04JpNeJnEA" association="_rCkKAB1QEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rCkKBB1QEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rCkKBR1QEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2ID3wB1QEeiw04JpNeJnEA" memberEnd="_2ID3wx1QEeiw04JpNeJnEA _2ID3xh1QEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2ID3wR1QEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2ID3wh1QEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2ID3xh1QEeiw04JpNeJnEA" type="_3iyOAxcpEeiw04JpNeJnEA" association="_2ID3wB1QEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2ID3wx1QEeiw04JpNeJnEA" type="_3kkWsBcpEeiw04JpNeJnEA" association="_2ID3wB1QEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ID3xB1QEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ID3xR1QEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IiDG0B1REeiw04JpNeJnEA" memberEnd="_IiM30B1REeiw04JpNeJnEA _IiM30x1REeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IiDG0R1REeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IiDG0h1REeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IiM30x1REeiw04JpNeJnEA" type="_3gtKZBcpEeiw04JpNeJnEA" association="_IiDG0B1REeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IiM30B1REeiw04JpNeJnEA" type="_3kkWsBcpEeiw04JpNeJnEA" association="_IiDG0B1REeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IiM30R1REeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IiM30h1REeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q0SCwB1REeiw04JpNeJnEA" memberEnd="_Q0SCwx1REeiw04JpNeJnEA _Q0SCxh1REeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q0SCwR1REeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q0SCwh1REeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Q0SCxh1REeiw04JpNeJnEA" type="_3gtKZBcpEeiw04JpNeJnEA" association="_Q0SCwB1REeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Q0SCwx1REeiw04JpNeJnEA" type="_3kHqxBcpEeiw04JpNeJnEA" association="_Q0SCwB1REeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q0SCxB1REeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q0SCxR1REeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZlmHYB1REeiw04JpNeJnEA" memberEnd="_ZlmHYx1REeiw04JpNeJnEA _Zlv4YR1REeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZlmHYR1REeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZlmHYh1REeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Zlv4YR1REeiw04JpNeJnEA" type="_3d340RcpEeiw04JpNeJnEA" association="_ZlmHYB1REeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZlmHYx1REeiw04JpNeJnEA" type="_3gtKYhcpEeiw04JpNeJnEA" association="_ZlmHYB1REeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZlmHZB1REeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zlv4YB1REeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iDlAUB1REeiw04JpNeJnEA" memberEnd="_iDlAUx1REeiw04JpNeJnEA _iDlAVh1REeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iDlAUR1REeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iDlAUh1REeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_iDlAVh1REeiw04JpNeJnEA" type="_3d340RcpEeiw04JpNeJnEA" association="_iDlAUB1REeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_iDlAUx1REeiw04JpNeJnEA" type="_3gtKZBcpEeiw04JpNeJnEA" association="_iDlAUB1REeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iDlAVB1REeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iDlAVR1REeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FAZIgB1SEeiw04JpNeJnEA" memberEnd="_FAi5gh1SEeiw04JpNeJnEA _FAi5hR1SEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FAi5gB1SEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FAi5gR1SEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FAi5hR1SEeiw04JpNeJnEA" type="_3hcxQBcpEeiw04JpNeJnEA" association="_FAZIgB1SEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FAi5gh1SEeiw04JpNeJnEA" type="_X6DrcBiXEeiw04JpNeJnEA" association="_FAZIgB1SEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FAi5gx1SEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FAi5hB1SEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UcitcB1SEeiw04JpNeJnEA" memberEnd="_Ucitcx1SEeiw04JpNeJnEA _Ucitdh1SEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UcitcR1SEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ucitch1SEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ucitdh1SEeiw04JpNeJnEA" type="_3hcxQBcpEeiw04JpNeJnEA" association="_UcitcB1SEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ucitcx1SEeiw04JpNeJnEA" type="_NiYF8BiXEeiw04JpNeJnEA" association="_UcitcB1SEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UcitdB1SEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UcitdR1SEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_j3pwkB1SEeiw04JpNeJnEA" memberEnd="_j3pwkx1SEeiw04JpNeJnEA _j3pwlh1SEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j3pwkR1SEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j3pwkh1SEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_j3pwlh1SEeiw04JpNeJnEA" type="_3hcxQBcpEeiw04JpNeJnEA" association="_j3pwkB1SEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_j3pwkx1SEeiw04JpNeJnEA" type="_3jFI8hcpEeiw04JpNeJnEA" association="_j3pwkB1SEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j3pwlB1SEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j3pwlR1SEeiw04JpNeJnEA" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_t-9-0B1SEeiw04JpNeJnEA" name="ContactPanel">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1u3-YKPMEeyDx4TGEMS43g" name="AddButton" type="_3niyNxcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2x46kKPMEeyDx4TGEMS43g" name="DeleteButton" type="_3niyNxcpEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qy0s4KPNEeyDx4TGEMS43g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QzCvUKPNEeyDx4TGEMS43g" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_A2UM4KPNEeyDx4TGEMS43g" name="DeleteConfirmButton" type="_3niyNxcpEeiw04JpNeJnEA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Lv6zsKPNEeyDx4TGEMS43g" name="Contact" type="_3hl7NRcpEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QGsmsKPNEeyDx4TGEMS43g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QG73QKPNEeyDx4TGEMS43g" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zSwzsB1SEeiw04JpNeJnEA" memberEnd="_zSwzsx1SEeiw04JpNeJnEA _zSwzth1SEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zSwzsR1SEeiw04JpNeJnEA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zSwzsh1SEeiw04JpNeJnEA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zSwzth1SEeiw04JpNeJnEA" type="_3iyOAxcpEeiw04JpNeJnEA" association="_zSwzsB1SEeiw04JpNeJnEA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zSwzsx1SEeiw04JpNeJnEA" type="_t-9-0B1SEeiw04JpNeJnEA" association="_zSwzsB1SEeiw04JpNeJnEA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zSwztB1SEeiw04JpNeJnEA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zSwztR1SEeiw04JpNeJnEA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uaQjQBcpEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uaZtMBcpEeiw04JpNeJnEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/JAVA/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_JAVA_PROFILES/java.profile.uml#_6TYLMN0yEd6P1qtlpBOZyg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_3cicEBcpEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3cicERcpEeiw04JpNeJnEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_3dIR8BcpEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3dIR8RcpEeiw04JpNeJnEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_3dSC8BcpEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3dSC8RcpEeiw04JpNeJnEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_YnzGwB1vEeiw04JpNeJnEA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YnzGwR1vEeiw04JpNeJnEA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:Create xmi:id="_3iCnIhcpEeiw04JpNeJnEA" base_BehavioralFeature="_3iCnIRcpEeiw04JpNeJnEA"/>
+  <standard:Create xmi:id="_3nsjMBcpEeiw04JpNeJnEA" base_BehavioralFeature="_3niyPhcpEeiw04JpNeJnEA"/>
+  <standard:Create xmi:id="_3n_eMBcpEeiw04JpNeJnEA" base_BehavioralFeature="_3n_eLxcpEeiw04JpNeJnEA"/>
+  <standard:Create xmi:id="_Nih3BBiXEeiw04JpNeJnEA" base_BehavioralFeature="_NiYGARiXEeiw04JpNeJnEA"/>
+  <standard:Create xmi:id="_X6DrmBiXEeiw04JpNeJnEA" base_BehavioralFeature="_X6DrgRiXEeiw04JpNeJnEA"/>
+</xmi:XMI>
