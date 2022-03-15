@@ -1,0 +1,5 @@
+I 100% dropped the ball on this - I envisioned it would be more of an extension of previous work akin to other labs, but it ended up being at least 3x harder than any of the previous work done in this course. I neglected it and focused on homework for other classes, and that is entirely my own fault.
+
+I also feel as if I have missed something critical - the lab5outClient_1.bat script refers to ClientGUI.java, but no such class was indicated to be created in the given diagram. I renamed ChatGUI to ClientGUI to fix this, but I'm not sure if that is correct.
+
+No ProgramRequirements.png is included as I did not manage to successfully complete all the required changes.

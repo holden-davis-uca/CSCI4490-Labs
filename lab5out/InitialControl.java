@@ -36,6 +36,10 @@ public class InitialControl implements ActionListener
     else if (command.equals("Create"))
     {
       //Handle CreatAccount Here
+    	CreateAccountPanel createPanel = (CreateAccountPanel)container.getComponent(2);
+        createPanel.setError("");
+        CardLayout cardLayout = (CardLayout)container.getLayout();
+        cardLayout.show(container, "3");
     }
   }
 }

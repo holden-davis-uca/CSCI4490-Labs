@@ -46,7 +46,9 @@ public class LoginControl implements ActionListener
       }
 
       // Submit the login information to the server.
-     
+      ContactPanel contactPanel = (ContactPanel)container.getComponent(3);
+	  CardLayout cardLayout = (CardLayout)container.getLayout();
+      cardLayout.show(container, "4");
     }
   }
 
