@@ -15,3 +15,4 @@ Currently:
 * Lab 5 Out
 * Lab 6 In
 * Lab 7 In
+* Lab 8 In
