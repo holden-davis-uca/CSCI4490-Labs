@@ -19,7 +19,7 @@ public class DatabaseFileTest {
 	@Before
 	public void setUp() throws Exception 
 	{
-	  db = new DatabaseFile(); 
+	  db = new DatabaseFile();
 	  db.setStream("lab8in/users.txt");
 	  rando = ((int)Math.random()*users.length); 
 	}

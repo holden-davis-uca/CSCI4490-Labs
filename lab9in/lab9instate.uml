@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_pmRk0MAbEeyWLt6qz8CfAA" name="lab9instate">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_poX2kMAbEeyWLt6qz8CfAA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_pmlG0MAbEeyWLt6qz8CfAA" name="WindowController">
+    <region xmi:type="uml:Region" xmi:id="_pm4BwMAbEeyWLt6qz8CfAA" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_iTPCwMAgEeyy6eMUoTr_8w" source="_S1YNoMAgEeyy6eMUoTr_8w" target="_e_PicMAgEeyy6eMUoTr_8w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_kLmSkMAgEeyy6eMUoTr_8w" source="_S1YNoMAgEeyy6eMUoTr_8w" target="_hICa8MAgEeyy6eMUoTr_8w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5cPlsMAgEeyy6eMUoTr_8w" source="_e_PicMAgEeyy6eMUoTr_8w" target="_z8KBQMAgEeyy6eMUoTr_8w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7gk08MAgEeyy6eMUoTr_8w" source="_z8KBQMAgEeyy6eMUoTr_8w" target="_hICa8MAgEeyy6eMUoTr_8w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IDSHkMAhEeyy6eMUoTr_8w" source="_e_PicMAgEeyy6eMUoTr_8w" target="_G2rKgMAhEeyy6eMUoTr_8w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Jyy9YMAhEeyy6eMUoTr_8w" source="_G2rKgMAhEeyy6eMUoTr_8w" target="_hICa8MAgEeyy6eMUoTr_8w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_aHU70MAhEeyy6eMUoTr_8w" source="_hICa8MAgEeyy6eMUoTr_8w" target="_YB7VkMAhEeyy6eMUoTr_8w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_bULJcMAhEeyy6eMUoTr_8w" source="_YB7VkMAhEeyy6eMUoTr_8w" target="_e_PicMAgEeyy6eMUoTr_8w"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_S1YNoMAgEeyy6eMUoTr_8w" name="Midway Point"/>
+      <subvertex xmi:type="uml:State" xmi:id="_e_PicMAgEeyy6eMUoTr_8w" name="UP"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hICa8MAgEeyy6eMUoTr_8w" name="Down"/>
+      <subvertex xmi:type="uml:State" xmi:id="_z8KBQMAgEeyy6eMUoTr_8w" name="Obstruction"/>
+      <subvertex xmi:type="uml:State" xmi:id="_G2rKgMAhEeyy6eMUoTr_8w" name="Top"/>
+      <subvertex xmi:type="uml:State" xmi:id="_YB7VkMAhEeyy6eMUoTr_8w" name="Bottom"/>
+    </region>
+  </packagedElement>
+</uml:Model>
